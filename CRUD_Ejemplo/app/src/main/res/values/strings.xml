@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CRUD_Ejemplo</string>
+    <string name="helperText1">*Obligatorio</string>
+    <string name="hintText1">Codigo del Producto</string>
+    <string name="hintText2">Etiqueta del Producto</string>
+    <string name="hintText3">Precio del Producto</string>
+    <string name="btnRegistrar">REGISTRAR</string>
+    <string name="btnConsultar">CONSULTAR</string>
+    <string name="btnModificar">MODIFICAR</string>
+    <string name="btnEliminar">ELIMINAR</string>
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo_crud"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:id="@+id/tilCode"
+        app:helperText="@string/helperText1"
+        app:counterEnabled="true"
+        app:counterMaxLength="4"
+        app:startIconDrawable="@drawable/ic_code"
+        app:helperTextTextColor="@color/teal_700"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/CampoCode"
+            android:hint="@string/hintText1"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:digits="1234567890"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:id="@+id/tilEtiqueta"
+        app:helperText="@string/helperText1"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:startIconDrawable="@drawable/ic_etiqueta"
+        app:helperTextTextColor="@color/teal_700"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/CampoEtiqueta"
+            android:hint="@string/hintText2"
+            android:imeOptions="actionNext"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:id="@+id/tilPrecio"
+        app:helperText="@string/helperText1"
+        app:startIconDrawable="@drawable/ic_precio"
+        app:helperTextTextColor="@color/teal_700"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/CampoPrecio"
+            android:hint="@string/hintText3"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:digits="1234567890"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:text="@string/btnRegistrar"
+        android:drawableLeft="@drawable/ic_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:text="@string/btnConsultar"
+        android:drawableLeft="@drawable/ic_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnEditar"
+        android:text="@string/btnModificar"
+        android:drawableLeft="@drawable/ic_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:text="@string/btnEliminar"
+        android:drawableLeft="@drawable/ic_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
